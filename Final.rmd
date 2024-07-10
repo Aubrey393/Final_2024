@@ -1,6 +1,6 @@
 ---
 title: "Covid91 vaccine study Final2024"
-author: "Put your name here!"
+author: "Aubrey Garcia!"
 output: 
   html_document:
     number_sections: true
@@ -26,15 +26,64 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+### methods
+
+### Descriptive results
+
+#### graphical summary
+
+#### numerical summary
+
+#### Inferential Results
+
+#### Conclusion
+
+
 
 ## Females
 
 
+### methods
+
+### Descriptive results
+
+#### graphical summary
+
+#### numerical summary
+
+####Inferential Results
+
+#### Conclusion
+
+
 ## LGBTQ
 
+### methods
+
+### Descriptive results
+
+#### graphical summary
+
+#### numerical summary
+
+#### Inferential Results
+
+#### Conclusion
 
 
 ## Druggies
+
+### methods
+
+### Descriptive results
+
+#### graphical summary
+
+#### numerical summary
+
+#### Inferential Results
+
+#### Conclusion
 
 
 # Overall Results and Conclusions
