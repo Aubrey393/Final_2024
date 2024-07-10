@@ -26,6 +26,10 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Males
 
+$H_0$:Covid19 is not effective in males
+
+$H_A$:Covid19 is effective in males
+
 ### methods
 
 ### Descriptive results
@@ -42,7 +46,9 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 ## Females
 
+$H_0$:Covid19 is not effective in females
 
+$H_A$:Covid19 is effective in females
 ### methods
 
 ### Descriptive results
@@ -51,12 +57,16 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 #### numerical summary
 
-####Inferential Results
+#### Inferential Results
 
 #### Conclusion
 
 
 ## LGBTQ
+
+$H_0$:Covid19 is not effective in LGBTQ community
+
+$H_A$:Covid19 is effective in LGBTQ community
 
 ### methods
 
@@ -72,6 +82,10 @@ A new  preventative vaccine (covid921) is under test in clinical trials. Given t
 
 
 ## Druggies
+
+$H_0$:Covid19 is not effective in drug users.
+
+$H_A$:Covid19 is effective in drug users.
 
 ### methods
 
