@@ -31,10 +31,20 @@ $H_0$:Covid19 is not effective in males
 $H_A$:Covid19 is effective in males
 
 ### methods
-
+Treatment is a categorical variable
+Sex is a categorical variable ..
+so we use the cat~cat helper file
 ### Descriptive results
 
 #### graphical summary
+```{r}
+males=filter(FinalData,FinalData$sex=="M")
+barchartGC(~treatment + infected,data=males)
+barchartGC(~infected + treatment,data=males, type="percent")
+```
+
+
+
 
 #### numerical summary
 
