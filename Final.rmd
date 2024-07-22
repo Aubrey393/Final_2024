@@ -98,9 +98,24 @@ The chart shows that in females, those who reccived the placebo had gotten more 
 
 #### numerical summary
 
+```{r}
+table1 <- xtabs(~treatment + infected, data=females)
+rowPerc(table1)
+colPerc(table1)
+```
+The numerical results showed that 65% of those who got the placebo got covid-19 and that 35% of those who got the vaccine got covid-19.
+
 #### Inferential Results
 
-#### Conclusion
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+The inferential results, using a chi-squired test, showed that the p-value is 0.00000001914  therefore we reject the null hypothesis because it is less than 0.05 
+
+The Fisher's Exact Test for Count Data shows that the p-vaule is 0.00000001246
+therefore we reject the null hypothesis because it is less than 0.05. The test also showed that  females have a odd ratio of 1.8 times more likely to get Covid-19 with a placebo compared to those who got the vaccine.  
 
 
 ## LGBTQ
