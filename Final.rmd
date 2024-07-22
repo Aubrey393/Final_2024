@@ -244,11 +244,9 @@ When tested weather the vaccine was effective in males, The inferential results,
 
 When testing the vaccines effectiveness in females, The inferential results, using a chi-squired test, showed that the p-value is 0.00000001914 rejecting the null hypothesis because it is less than 0.05. The Fisher's Exact Test showed that  females have a odd ratio of 1.8 times more likely to get Covid-19 with a placebo compared to those who got the vaccine.  
 
-When testing the LGBTQ community The inferential results, using a chi-squired test, showed that the p-value is 0.00000000000000022, rejecting the null hypothesis because it is less than 0.05 
+When testing the LGBTQ community the inferential results, using a chi-squired test, showed that the p-value is 0.00000000000000022, rejecting the null hypothesis because it is less than 0.05. The Fisher's Exact Test showed that lgbtq have a odd ratio of 4.2 times more likely to get Covid-19 with a placebo compared to those who got the vaccine. 
 
-The Fisher's Exact Test for Count Data shows that the p-vaule is 0.00000000000000022 therefore we reject the null hypothesis because it is less than 0.05. The test also showed that lgbtq have a odd ratio of 4.2 times more likely to get Covid-19 with a placebo compared to those who got the vaccine. 
-
-
+When testing the druguser subgroup the inferential results, using a chi-squired test, showed that the p-value is 0.00000000000000022, we rejecting the null hypothesis because it is less than 0.05 The Fisher's Exact Test showed that drugusers have a odd ratio of 2.2 times more likely to get Covid-19 with a placebo compared to those who got the vaccine. 
 
 
 
