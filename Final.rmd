@@ -42,13 +42,31 @@ males=filter(FinalData,FinalData$sex=="M")
 barchartGC(~treatment + infected,data=males)
 barchartGC(~infected + treatment,data=males, type="percent")
 ```
-
+The chart shows that those who reccived the placebo had gotten more positive covid-19 results and those who had gotten the vaccine had a lower amount in positive covid-19 results.
 
 
 
 #### numerical summary
 
+```{r}
+table1 <- xtabs(~treatment + infected, data=males)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The table shows that 74% of males who received the placebo got Covid-19, and 26% males who got the vaccine got Covid-19
+
 #### Inferential Results
+
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The inferential results, using a chi-squired test, showed that the p-value is 0.00000000000000022  therefore we reject the null hypothesis because it is less than 0.05 
+
+The Fisher's Exact Test for Count Data shows that the p-vaule is 0.00000000000000022  therefore we reject the null hypothesis because it is less than 0.05. The test also showed that  males have a odd ratio of 2.8 times more likely to get Covid-19 with a placebo compared to those who got the vaccine.  
 
 #### Conclusion
 
