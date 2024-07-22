@@ -24,6 +24,9 @@ mutate(across(where(is.character), as.factor))
 
 A new  preventative vaccine (covid921) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups by gender( guys and gals), drug use, and sexual orientation. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
 
+$H_0$:The covid-19 vaccine has no effect on people in different sub groups
+$H_A$:The covid-19 vaccine does have an effect on people in different sub groups
+
 ## Males
 
 $H_0$:Covid19 is not effective in males
@@ -42,7 +45,7 @@ males=filter(FinalData,FinalData$sex=="M")
 barchartGC(~treatment + infected,data=males)
 barchartGC(~infected + treatment,data=males, type="percent")
 ```
-The chart shows that those who reccived the placebo had gotten more positive covid-19 results and those who had gotten the vaccine had a lower amount in positive covid-19 results.
+The chart shows in males that those who reccived the placebo had gotten much more positive covid-19 results and those who had gotten the vaccine had a lower amount in positive covid-19 results.
 
 
 
@@ -68,20 +71,30 @@ The inferential results, using a chi-squired test, showed that the p-value is 0.
 
 The Fisher's Exact Test for Count Data shows that the p-vaule is 0.00000000000000022  therefore we reject the null hypothesis because it is less than 0.05. The test also showed that  males have a odd ratio of 2.8 times more likely to get Covid-19 with a placebo compared to those who got the vaccine.  
 
-#### Conclusion
-
-
-
 ## Females
 
 $H_0$:Covid19 is not effective in females
 
 $H_A$:Covid19 is effective in females
+
 ### methods
+
+Treatment is categorical varible
+Sex is a categorical varible
+so we use the cat~cat helper file
 
 ### Descriptive results
 
 #### graphical summary
+
+```{r}
+females=filter(FinalData,FinalData$sex=="F")
+barchartGC(~treatment + infected,data=females)
+barchartGC(~infected + treatment,data=females, type="percent")
+```
+
+The chart shows that in females, those who reccived the placebo had gotten more positive covid-19 results and those who had gotten the vaccine had a much lower amount in positive covid-19 results.
+
 
 #### numerical summary
 
