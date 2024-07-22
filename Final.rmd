@@ -45,6 +45,7 @@ males=filter(FinalData,FinalData$sex=="M")
 barchartGC(~treatment + infected,data=males)
 barchartGC(~infected + treatment,data=males, type="percent")
 ```
+
 The chart shows in males that those who reccived the placebo had gotten much more positive covid-19 results and those who had gotten the vaccine had a lower amount in positive covid-19 results.
 
 
@@ -124,17 +125,47 @@ $H_0$:Covid19 is not effective in LGBTQ community
 
 $H_A$:Covid19 is effective in LGBTQ community
 
+
 ### methods
+
+Treatment is a categorical variable
+LGBTQ is a categorical variable
+So we use the cat~cat helper file
 
 ### Descriptive results
 
 #### graphical summary
 
+```{r}
+LGBTQ=filter(FinalData,FinalData$LGBTQ=="gay")
+barchartGC(~treatment + infected,data=LGBTQ)
+barchartGC(~infected + treatment,data=LGBTQ, type="percent")
+LGBTQ=filter(FinalData,FinalData$LGBTQ=="straight")
+```
+The table shows that in the LGBTQ community there was more positive covid-19 results among those who has received the placebo and the ones that had gotten the vaccine and much lower positive covid-19 results.
+
 #### numerical summary
+
+```{r}
+table1 <- xtabs(~treatment + infected, data=LGBTQ)
+rowPerc(table1)
+colPerc(table1)
+```
+
+The numerical results showed that 68% of those who got the placebo got covid-19 and that 32% of those who got the vaccine got covid-19.
+
 
 #### Inferential Results
 
-#### Conclusion
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+fisher.test(table1)
+```
+
+The inferential results, using a chi-squired test, showed that the p-value is 0.00000000000000022  therefore we reject the null hypothesis because it is less than 0.05 
+
+The Fisher's Exact Test for Count Data shows that the p-vaule is 0.00000000000000022 therefore we reject the null hypothesis because it is less than 0.05. The test also showed that lgbtq have a odd ratio of 2.1 times more likely to get Covid-19 with a placebo compared to those who got the vaccine. 
 
 
 ## Druggies
