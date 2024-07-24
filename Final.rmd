@@ -82,9 +82,9 @@ The Fisher's Exact Test for Count Data shows that the p-vaule is 0.0000000000000
 
 ## Females
 
-$H_0$:Covid19 is not effective in females
+$H_0$:Covid19 vaccine is not effective in females
 
-$H_A$:Covid19 is effective in females
+$H_A$:Covid19 vaccine is effective in females
 
 ### methods
 
@@ -136,9 +136,9 @@ therefore we reject the null hypothesis because it is less than 0.05. The test a
 
 ## LGBTQ
 
-$H_0$:Covid19 is not effective in LGBTQ community
+$H_0$:Covid19 vaccine is not effective in LGBTQ community
 
-$H_A$:Covid19 is effective in LGBTQ community
+$H_A$:Covid19 vaccine is effective in LGBTQ community
 
 
 ### methods
@@ -187,9 +187,9 @@ The Fisher's Exact Test for Count Data shows that the p-vaule is 0.0000000000000
 
 ## Druggies
 
-$H_0$:Covid19 is not effective in drug users.
+$H_0$:Covid19 vaccine is not effective in drug users.
 
-$H_A$:Covid19 is effective in drug users.
+$H_A$:Covid19 vaccine is effective in drug users.
 
 ### methods
 
@@ -250,4 +250,4 @@ When testing the druguser subgroup the inferential results, using a chi-squired 
 
 
 
-The difference in odd ratios in the different subgroups prove there is a statistical difference in each group in terms of those who who did and didnt reccieve the druh, proving that there is a difference in the effectivness of the drug in different sub groups. 
+The difference in odd ratios in the different subgroups prove there is a statistical difference in each group in terms of those who who did and didnt received the drug, proving that there is a difference in the effectiveness of the drug in different sub groups. 
